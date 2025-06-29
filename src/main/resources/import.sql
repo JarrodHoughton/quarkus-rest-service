@@ -1,0 +1,15 @@
+INSERT INTO fruitcategory(id, name, description) VALUES (1, 'Tropical', 'Nice refreshing');
+INSERT INTO fruitcategory(id, name, description) VALUES (2, 'Summer', 'Also good');
+INSERT INTO fruitcategory(id, name, description) VALUES (3, 'Spring', 'Yummy');
+INSERT INTO fruit(id, name) VALUES (1, 'Cherry');
+INSERT INTO fruit(id, name) VALUES (2, 'Apple');
+INSERT INTO fruit(id, name) VALUES (3, 'Banana');
+INSERT INTO jt_fruit_fruitcategory(fruit_id, fruitcategory_id) VALUES (1, 3);
+INSERT INTO jt_fruit_fruitcategory(fruit_id, fruitcategory_id) VALUES (2, 2);
+INSERT INTO jt_fruit_fruitcategory(fruit_id, fruitcategory_id) VALUES (2, 3);
+INSERT INTO jt_fruit_fruitcategory(fruit_id, fruitcategory_id) VALUES (2, 1);
+INSERT INTO jt_fruit_fruitcategory(fruit_id, fruitcategory_id) VALUES (3, 1);
+INSERT INTO jt_fruit_fruitcategory(fruit_id, fruitcategory_id) VALUES (1, 2);
+INSERT INTO jt_fruit_fruitcategory(fruit_id, fruitcategory_id) VALUES (3, 2);
+ALTER SEQUENCE fruitcategory_seq RESTART WITH 4;
+ALTER SEQUENCE fruit_seq RESTART WITH 4;
